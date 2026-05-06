@@ -3,526 +3,653 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <!-- Primary Meta Tags -->
-  <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="GuardChat: Benchmarking Multi-Turn Jailbreak Attacks in T2I Systems - Ngoc-Dai Tran, Thanh-Tuong Huynh, Trung-Nghia Le">
-  <!-- TODO: Write a compelling 150-160 character description of your research -->
-  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Add 5-10 relevant keywords for your research area -->
-  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
-  <!-- TODO: List all authors -->
+
+  <title>GuardChat: Benchmarking Multi-Turn Jailbreak Attacks in T2I Systems</title>
+  <meta name="title" content="GuardChat: Benchmarking Multi-Turn Jailbreak Attgacks in T2I Systems">
+  <meta name="description" content="GuardChat is a 10,000-sample benchmark for studying multi-turn, memory-exploiting jailbreak attacks and defenses in text-to-image systems.">
+  <meta name="keywords" content="GuardChat, text-to-image safety, jailbreak attacks, multi-turn dialogue, prompt rewriting, NSFW detection, benchmark dataset, generative AI safety">
   <meta name="author" content="Ngoc-Dai Tran, Thanh-Tuong Huynh, Trung-Nghia Le">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
-  
-  <!-- Open Graph / Facebook -->
+  <meta name="theme-color" content="#124076">
+
   <meta property="og:type" content="article">
-  <!-- TODO: Replace with your institution or lab name -->
-  <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
-  <!-- TODO: Same as paper title above -->
+  <meta property="og:site_name" content="GuardChat Project Page">
   <meta property="og:title" content="GuardChat: Benchmarking Multi-Turn Jailbreak Attacks in T2I Systems">
-  <!-- TODO: Same as description above -->
-  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Replace with your actual website URL -->
-  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
-  <!-- TODO: Create a 1200x630px preview image and update path -->
-  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
-  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
-  <meta property="article:author" content="Ngoc-Dai Tran">
-  <meta property="article:section" content="Research">
-  <meta property="article:tag" content="KEYWORD1">
-  <meta property="article:tag" content="KEYWORD2">
+  <meta property="og:description" content="A large-scale benchmark for conversational jailbreak attacks and context-aware defenses in text-to-image systems.">
+  <meta property="og:url" content="https://anonymous.4open.science/w/GuardChat/">
+  <meta property="og:image" content="static/images/carousel1.jpg">
+  <meta property="og:image:alt" content="GuardChat research preview">
 
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <!-- TODO: Replace with your lab/institution Twitter handle -->
-  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
-  <!-- TODO: Replace with first author's Twitter handle -->
-  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
-  <!-- TODO: Same as paper title above -->
   <meta name="twitter:title" content="GuardChat: Benchmarking Multi-Turn Jailbreak Attacks in T2I Systems">
-  <!-- TODO: Same as description above -->
-  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Same as social preview image above -->
-  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
+  <meta name="twitter:description" content="A 10,000-sample benchmark for multi-turn jailbreak attacks and T2I safety defenses.">
+  <meta name="twitter:image" content="static/images/carousel1.jpg">
 
-  <!-- Academic/Research Specific -->
   <meta name="citation_title" content="GuardChat: Benchmarking Multi-Turn Jailbreak Attacks in T2I Systems">
   <meta name="citation_author" content="Tran, Ngoc-Dai">
   <meta name="citation_author" content="Huynh, Thanh-Tuong">
   <meta name="citation_author" content="Le, Trung-Nghia">
-  <meta name="citation_publication_date" content="2024">
-  <meta name="citation_conference_title" content="CONFERENCE_NAME">
-  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
-  
-  <!-- Additional SEO -->
-  <meta name="theme-color" content="#2563eb">
-  <meta name="msapplication-TileColor" content="#2563eb">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  
-  <!-- Preconnect for performance -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://ajax.googleapis.com">
-  <link rel="preconnect" href="https://documentcloud.adobe.com">
-  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <meta name="citation_publication_date" content="2026">
+  <meta name="citation_conference_title" content="NeurIPS 2026">
+  <meta name="citation_pdf_url" content="static/pdfs/paper.pdf">
 
-
-  <!-- TODO: Replace with your paper title and authors -->
-  <title>GuardChat: Benchmarking Multi-Turn Jailbreak Attacks in T2I Systems - Ngoc-Dai Tran, Thanh-Tuong Huynh, Trung-Nghia Le | Academic Research</title>
-  
-  <!-- Favicon and App Icons -->
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link rel="apple-touch-icon" href="static/images/favicon.ico">
-  
-  <!-- Critical CSS - Load synchronously -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-  
-  <!-- Non-critical CSS - Load asynchronously -->
-  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  
-  <!-- Fallback for browsers that don't support preload -->
   <noscript>
-    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
     <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   </noscript>
-  
-  <!-- Fonts - Optimized loading -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <!-- Defer non-critical JavaScript -->
-  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+
   <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script defer src="static/js/bulma-carousel.min.js"></script>
-  <script defer src="static/js/bulma-slider.min.js"></script>
   <script defer src="static/js/index.js"></script>
-  
-  <!-- Structured Data for Academic Papers -->
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ScholarlyArticle",
     "headline": "GuardChat: Benchmarking Multi-Turn Jailbreak Attacks in T2I Systems",
-    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
+    "description": "GuardChat is a 10,000-sample benchmark for studying memory-exploiting multi-turn jailbreak attacks and context-aware safety defenses in text-to-image systems.",
     "author": [
-      {
-        "@type": "Person",
-        "name": "Ngoc-Dai Tran",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      },
-      {
-        "@type": "Person",
-        "name": "Thanh-Tuong Huynh",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "University of Science, Ho Chi Minh City, Vietnam; Vietnam National University, Ho Chi Minh City, Vietnam"
-        }
-      },
-      {
-        "@type": "Person",
-        "name": "Trung-Nghia Le",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      }
+      {"@type": "Person", "name": "Ngoc-Dai Tran"},
+      {"@type": "Person", "name": "Thanh-Tuong Huynh"},
+      {"@type": "Person", "name": "Trung-Nghia Le"}
     ],
-    "datePublished": "2024-01-01",
-    "publisher": {
-      "@type": "Organization",
-      "name": "CONFERENCE_OR_JOURNAL_NAME"
-    },
-    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
-    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
-    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
-    "abstract": "FULL_ABSTRACT_TEXT_HERE",
-    "citation": "BIBTEX_CITATION_HERE",
-    "isAccessibleForFree": true,
-    "license": "https://creativecommons.org/licenses/by/4.0/",
-    "mainEntity": {
-      "@type": "WebPage",
-      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
-    },
-    "about": [
-      {
-        "@type": "Thing",
-        "name": "RESEARCH_AREA_1"
-      },
-      {
-        "@type": "Thing", 
-        "name": "RESEARCH_AREA_2"
+    "datePublished": "2026",
+    "publisher": {"@type": "Organization", "name": "NeurIPS 2026"},
+    "url": "https://anonymous.4open.science/w/GuardChat/",
+    "encoding": {"@type": "MediaObject", "contentUrl": "static/pdfs/paper.pdf", "encodingFormat": "application/pdf"},
+    "keywords": ["text-to-image safety", "multi-turn jailbreak", "prompt rewriting", "unsafe text recognition", "benchmark dataset"],
+    "isAccessibleForFree": true
+  }
+  </script>
+
+  <style>
+    :root {
+      --guard-navy: #12355b;
+      --guard-blue: #2f80ed;
+      --guard-teal: #00a6a6;
+      --guard-red: #c44747;
+      --guard-ink: #152033;
+      --guard-muted: #617089;
+      --guard-line: #dce4ef;
+      --guard-soft: #f4f8fb;
+    }
+
+    body {
+      background: #ffffff;
+      color: var(--guard-ink);
+    }
+
+    .hero.guard-hero {
+      background:
+        linear-gradient(135deg, rgba(18, 53, 91, 0.94), rgba(0, 166, 166, 0.86)),
+        url("static/images/carousel1.jpg") center / cover;
+      color: #ffffff;
+      min-height: 88vh;
+      display: flex;
+      align-items: center;
+    }
+
+    .guard-hero .title,
+    .guard-hero .subtitle,
+    .guard-hero a {
+      color: #ffffff !important;
+    }
+
+    .guard-hero .publication-title {
+      max-width: 980px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .venue-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      margin-bottom: 1.25rem;
+      padding: 0.45rem 0.85rem;
+      border: 1px solid rgba(255, 255, 255, 0.36);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.14);
+      font-weight: 700;
+    }
+
+    .publication-authors {
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .hero-summary {
+      max-width: 880px;
+      margin: 1.75rem auto 0;
+      color: rgba(255, 255, 255, 0.92);
+      font-size: 1.15rem;
+    }
+
+    .button.is-guard {
+      background: #ffffff !important;
+      color: var(--guard-navy) !important;
+      border: 0 !important;
+    }
+
+    .button.is-outline-guard {
+      background: transparent !important;
+      color: #ffffff !important;
+      border-color: rgba(255, 255, 255, 0.72) !important;
+    }
+
+    .stats-grid,
+    .task-grid,
+    .category-grid,
+    .pipeline-grid {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .stats-grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      margin-top: 2rem;
+    }
+
+    .task-grid,
+    .pipeline-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .category-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .info-card,
+    .stat-card {
+      border: 1px solid var(--guard-line);
+      border-radius: 8px;
+      background: #ffffff;
+      box-shadow: 0 8px 24px rgba(21, 32, 51, 0.06);
+    }
+
+    .info-card {
+      padding: 1.35rem;
+      height: 100%;
+    }
+
+    .stat-card {
+      padding: 1.25rem;
+    }
+
+    .stat-value {
+      color: var(--guard-navy);
+      font-size: 2rem;
+      font-weight: 800;
+      line-height: 1.1;
+    }
+
+    .stat-label {
+      color: var(--guard-muted);
+      font-weight: 700;
+      margin-top: 0.35rem;
+    }
+
+    .section.is-soft {
+      background: var(--guard-soft);
+    }
+
+    .section-kicker {
+      color: var(--guard-teal);
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .table-container {
+      border: 1px solid var(--guard-line);
+      border-radius: 8px;
+      background: #ffffff;
+      overflow: auto;
+      box-shadow: 0 8px 24px rgba(21, 32, 51, 0.05);
+    }
+
+    .table thead th {
+      background: #edf4fb;
+      color: var(--guard-navy);
+      white-space: nowrap;
+    }
+
+    .pipeline-step {
+      border-left: 4px solid var(--guard-blue);
+    }
+
+    .finding {
+      border-left: 4px solid var(--guard-red);
+    }
+
+    .category-chip {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 2.25rem;
+      padding: 0.45rem 0.75rem;
+      border-radius: 999px;
+      background: #eaf6f6;
+      color: #075e63;
+      font-weight: 800;
+      text-align: center;
+    }
+
+    .pdf-frame {
+      width: 100%;
+      height: 620px;
+      border: 1px solid var(--guard-line);
+      border-radius: 8px;
+      background: #ffffff;
+    }
+
+    .bibtex-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    pre {
+      border-radius: 8px;
+      background: #101827;
+      color: #eef6ff;
+    }
+
+    @media (max-width: 900px) {
+      .stats-grid,
+      .task-grid,
+      .category-grid,
+      .pipeline-grid {
+        grid-template-columns: 1fr;
       }
-    ]
-  }
-  </script>
-  
-  <!-- Website/Organization Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "INSTITUTION_OR_LAB_NAME",
-    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
-    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
-    "sameAs": [
-      "https://twitter.com/YOUR_TWITTER_HANDLE",
-      "https://github.com/YOUR_GITHUB_USERNAME"
-    ]
-  }
-  </script>
+
+      .hero.guard-hero {
+        min-height: auto;
+      }
+
+      .pdf-frame {
+        height: 460px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-
-
-  <!-- Scroll to Top Button -->
   <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
     <i class="fas fa-chevron-up"></i>
   </button>
 
-  <!-- More Works Dropdown -->
-  <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
-      More Works
-      <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="more-works-dropdown" id="moreWorksDropdown">
-      <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="works-list">
-        <!-- TODO: Replace with your lab's related works -->
-        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
-          <div class="work-info">
-            <!-- TODO: Replace with actual paper title -->
-            <h5>Paper Title 1</h5>
-            <!-- TODO: Replace with brief description -->
-            <p>Brief description of the work and its main contribution.</p>
-            <!-- TODO: Replace with venue and year -->
-            <span class="work-venue">Conference/Journal 2024</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <!-- TODO: Add more related works or remove extra items -->
-        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 2</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 3</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-
   <main id="main-content">
-  <section class="hero">
-    <div class="hero-body">
+    <section class="hero guard-hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop has-text-centered">
+          <div class="venue-pill">
+            <i class="fas fa-shield-alt"></i>
+            Submitted to NeurIPS 2026
+          </div>
+          <h1 class="title is-1 publication-title">GuardChat: Benchmarking Multi-Turn Jailbreak Attacks in T2I Systems</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Ngoc-Dai Tran<sup>*</sup></span>
+            <span class="author-block">Thanh-Tuong Huynh<sup>*</sup></span>
+            <span class="author-block">Trung-Nghia Le<sup>†</sup></span>
+          </div>
+          <div class="is-size-6 publication-authors">
+            University of Science, Ho Chi Minh City, Vietnam<br>
+            Vietnam National University, Ho Chi Minh City, Vietnam<br>
+            <small><sup>*</sup>Equal contributions. <sup>†</sup>Corresponding author.</small>
+          </div>
+          <p class="hero-summary">
+            GuardChat introduces a 10,000-sample benchmark for evaluating how text-to-image systems fail under multi-turn,
+            memory-exploiting jailbreak attacks and how well current defenses recognize or rewrite unsafe intent.
+          </p>
+          <div class="publication-links mt-5">
+            <span class="link-block">
+              <a href="static/pdfs/paper.pdf" target="_blank" class="external-link button is-normal is-rounded is-guard">
+                <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                <span>Paper</span>
+              </a>
+            </span>
+            <span class="link-block">
+              <a href="https://anonymous.4open.science/w/GuardChat/" target="_blank" class="external-link button is-normal is-rounded is-outline-guard">
+                <span class="icon"><i class="fab fa-github"></i></span>
+                <span>Code &amp; Dataset</span>
+              </a>
+            </span>
+            <span class="link-block">
+              <a href="#BibTeX" class="external-link button is-normal is-rounded is-outline-guard">
+                <span class="icon"><i class="fas fa-quote-right"></i></span>
+                <span>BibTeX</span>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
       <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">GuardChat: Benchmarking Multi-Turn Jailbreak Attacks in T2I Systems</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- TODO: Replace with your paper authors and their personal links -->
-              <span class="author-block">
-                <a href="#" target="_blank">Ngoc-Dai Tran</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="#" target="_blank">Thanh-Tuong Huynh</a><sup>*</sup>, and</span>
-                  <span class="author-block">
-                    <a href="#" target="_blank">Trung-Nghia Le</a><sup>†</sup>
-                  </span>
-                  </div>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <p class="section-kicker">Abstract</p>
+            <h2 class="title is-3">Conversational Safety for Text-to-Image Models</h2>
+            <div class="content has-text-justified">
+              <p>
+                Multi-turn conversational jailbreak attacks that exploit model memory pose a critical yet underexplored
+                threat to text-to-image systems. By distributing harmful intent across multiple turns, adversaries can
+                bypass single-turn safety filters and elicit NSFW content spanning sexual, illegal, shocking, violence,
+                self-harm, and harassment categories.
+              </p>
+              <p>
+                GuardChat contains 10,000 prompt-conversation pairs. Each sample couples an enhanced toxic prompt with
+                a realistic 6-10 turn dialogue that incrementally induces unsafe generation. The dataset is constructed
+                through a scalable pipeline combining generative oracle verification and model-based synthesis, and it
+                achieves a 56.71% jailbreak success rate on a held-out test set.
+              </p>
+            </div>
+          </div>
+        </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">University of Science, Ho Chi Minh City, Vietnam<br>Vietnam National University, Ho Chi Minh City, Vietnam</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Equal contributions. <sup>†</sup>Corresponding author.</small></span>
-                  </div>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-value">10,000</div>
+            <div class="stat-label">Prompt-conversation pairs</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">6-10</div>
+            <div class="stat-label">Turns per attack dialogue</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">6</div>
+            <div class="stat-label">Unified harm categories</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">56.71%</div>
+            <div class="stat-label">Held-out jailbreak success rate</div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- TODO: Update with your arXiv paper ID -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- TODO: Add your supplementary material PDF or remove this section -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- TODO: Replace with your GitHub repository URL -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
-                <!-- TODO: Update with your arXiv paper ID -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+    <section class="section is-soft">
+      <div class="container is-max-desktop">
+        <p class="section-kicker">Contributions</p>
+        <h2 class="title is-3">What GuardChat Adds</h2>
+        <div class="columns is-multiline">
+          <div class="column is-half">
+            <div class="info-card">
+              <h3 class="title is-5">Multi-Turn T2I Jailbreak Dataset</h3>
+              <p>GuardChat is designed for memory-exploiting jailbreaks in T2I systems, rather than isolated single-turn prompts.</p>
+            </div>
+          </div>
+          <div class="column is-half">
+            <div class="info-card">
+              <h3 class="title is-5">Scalable Construction Pipeline</h3>
+              <p>A two-stage pipeline combines Gemini-2.5-Flash-Image oracle verification, LoRA-based prompt enhancement, and Gemma-4-31B conversation synthesis.</p>
+            </div>
+          </div>
+          <div class="column is-half">
+            <div class="info-card">
+              <h3 class="title is-5">Two Safety Tasks</h3>
+              <p>The benchmark covers multi-label unsafe text recognition and NSFW concept removal via prompt rewriting.</p>
+            </div>
+          </div>
+          <div class="column is-half">
+            <div class="info-card">
+              <h3 class="title is-5">Empirical Stress Test</h3>
+              <p>Existing defenses degrade substantially in conversational settings, and the strongest rewriting system reaches only 67.56% safe generation rate.</p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
-      <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <!-- TODO: Replace with your paper abstract -->
+    <section class="section">
+      <div class="container is-max-desktop">
+        <p class="section-kicker">Dataset</p>
+        <h2 class="title is-3">Statistics and Categories</h2>
+        <div class="content">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            GuardChat aggregates prompts from I2P, Nibbler, OVERT, and JailbreakDiffBench, then normalizes their labels
+            into six categories for multi-label evaluation.
           </p>
         </div>
+
+        <div class="category-grid mb-5">
+          <span class="category-chip">Sexual</span>
+          <span class="category-chip">Violence</span>
+          <span class="category-chip">Harassment</span>
+          <span class="category-chip">Shocking</span>
+          <span class="category-chip">Illegal</span>
+          <span class="category-chip">Self-harm</span>
+        </div>
+
+        <div class="table-container">
+          <table class="table is-fullwidth is-striped">
+            <thead>
+              <tr>
+                <th>Statistic</th>
+                <th>Full</th>
+                <th>Train</th>
+                <th>Test</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Samples</td><td>10,000</td><td>9,000</td><td>1,000</td></tr>
+              <tr><td>Sexual</td><td>2,904 (29.04%)</td><td>2,575 (28.61%)</td><td>329 (32.90%)</td></tr>
+              <tr><td>Violence</td><td>1,756 (17.56%)</td><td>1,596 (17.73%)</td><td>160 (16.00%)</td></tr>
+              <tr><td>Harassment</td><td>1,437 (14.37%)</td><td>1,178 (13.09%)</td><td>259 (25.90%)</td></tr>
+              <tr><td>Shocking</td><td>1,392 (13.92%)</td><td>1,295 (14.39%)</td><td>97 (9.70%)</td></tr>
+              <tr><td>Illegal</td><td>1,319 (13.19%)</td><td>1,233 (13.70%)</td><td>86 (8.60%)</td></tr>
+              <tr><td>Self-harm</td><td>1,192 (11.92%)</td><td>1,123 (12.48%)</td><td>69 (6.90%)</td></tr>
+              <tr><td>I2P source</td><td>6,339 (63.39%)</td><td>5,955 (66.17%)</td><td>384 (38.40%)</td></tr>
+              <tr><td>Nibbler source</td><td>2,307 (23.07%)</td><td>2,056 (22.84%)</td><td>251 (25.10%)</td></tr>
+              <tr><td>OVERT source</td><td>776 (7.76%)</td><td>776 (8.62%)</td><td>0 (0.00%)</td></tr>
+              <tr><td>JailbreakDiffBench source</td><td>578 (5.78%)</td><td>213 (2.37%)</td><td>365 (36.50%)</td></tr>
+            </tbody>
+          </table>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
+    </section>
 
+    <section class="section is-soft">
+      <div class="container is-max-desktop">
+        <p class="section-kicker">Pipeline</p>
+        <h2 class="title is-3">Construction Framework</h2>
+        <div class="pipeline-grid">
+          <div class="info-card pipeline-step">
+            <h3 class="title is-5">1. Data Collection</h3>
+            <p>Raw toxic prompts are collected from four established T2I safety datasets, deduplicated, filtered, and normalized.</p>
+          </div>
+          <div class="info-card pipeline-step">
+            <h3 class="title is-5">2. Prompt Enhancement</h3>
+            <p>Gemini-2.5-Flash and a LoRA fine-tuned Qwen2.5-7B-Instruct model rewrite raw prompts into stronger natural-language adversarial prompts.</p>
+          </div>
+          <div class="info-card pipeline-step">
+            <h3 class="title is-5">3. Conversation Synthesis</h3>
+            <p>Gemma-4-31B generates 6-10 turn conversations that begin benignly and gradually escalate toward the target unsafe concept.</p>
+          </div>
+          <div class="info-card pipeline-step">
+            <h3 class="title is-5">4. Verification and QA</h3>
+            <p>Gemini-2.5-Flash-Image validates 1,000 seed samples as a generative oracle; filtering checks label consistency, escalation coherence, and absence of PII.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
+    <section class="section">
+      <div class="container is-max-desktop">
+        <p class="section-kicker">Benchmark</p>
+        <h2 class="title is-3">Task 1: Multi-Label Unsafe Text Recognition</h2>
+        <div class="content">
+          <p>
+            Recognition models must infer unsafe intent from either isolated prompts or concatenated multi-turn dialogue.
+            Lower attack success rate (ASR) is better; higher Macro-F1 is better.
+          </p>
+        </div>
+        <div class="table-container">
+          <table class="table is-fullwidth is-striped">
+            <thead>
+              <tr>
+                <th>Model</th>
+                <th>Single-Turn ASR ↓</th>
+                <th>Multi-Turn ASR ↓</th>
+                <th>Macro-F1 ↑</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>BiLSTM</td><td>14.22</td><td>80.45</td><td>0.312</td></tr>
+              <tr><td>BERT</td><td>9.85</td><td>72.30</td><td>0.422</td></tr>
+              <tr><td>SafeGuider</td><td>5.50</td><td>58.21</td><td>0.487</td></tr>
+              <tr><td>Qwen2.5-7B (Zero-shot)</td><td>7.90</td><td>60.33</td><td>0.542</td></tr>
+              <tr><td>Llama-Guard-3-8B (Zero-shot)</td><td>6.50</td><td>52.15</td><td>0.579</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="info-card finding mt-5">
+          <strong>Main finding:</strong> Models that perform well on static prompts degrade sharply on multi-turn dialogue.
+          SafeGuider rises from 5.50% single-turn ASR to 58.21% multi-turn ASR, showing that distributed intent can evade existing defenses.
+        </div>
+      </div>
+    </section>
+
+    <section class="section is-soft">
+      <div class="container is-max-desktop">
+        <p class="section-kicker">Benchmark</p>
+        <h2 class="title is-3">Task 2: NSFW Concept Removal via Prompt Rewriting</h2>
+        <div class="content">
+          <p>
+            Rewriting systems sanitize unsafe prompts before image generation. Evaluation reports Safe Generation Rate (SGR)
+            across T2I targets and CLIP cosine similarity for semantic preservation.
+          </p>
+        </div>
+        <div class="table-container">
+          <table class="table is-fullwidth is-striped">
+            <thead>
+              <tr>
+                <th>Model</th>
+                <th>FLUX.1 SGR ↑</th>
+                <th>Gemini SGR ↑</th>
+                <th>DALL-E 3 SGR ↑</th>
+                <th>CLIP Sim. ↑</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>SafeGuider</td><td>24.50</td><td>38.10</td><td>45.20</td><td>0.351</td></tr>
+              <tr><td>Llama-3.1-8B</td><td>31.20</td><td>46.50</td><td>52.10</td><td>0.418</td></tr>
+              <tr><td>Gemini 2.5 Flash</td><td>44.80</td><td>59.30</td><td>67.56</td><td>0.515</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="info-card finding mt-5">
+          <strong>Main finding:</strong> Gemini 2.5 Flash performs best among tested rewriting models, but even the strongest system
+          reaches only 67.56% SGR on DALL-E 3 and all systems show low semantic preservation.
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container is-max-desktop">
+        <p class="section-kicker">Context</p>
+        <h2 class="title is-3">Comparison with Existing T2I Safety Datasets</h2>
+        <div class="table-container">
+          <table class="table is-fullwidth is-striped">
+            <thead>
+              <tr>
+                <th>Dataset</th>
+                <th>Scale</th>
+                <th>Multi-Turn</th>
+                <th>Labels</th>
+                <th>Tasks</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>I2P</td><td>4,703</td><td>No</td><td>1</td><td>1</td></tr>
+              <tr><td>Nibbler</td><td>6,297</td><td>No</td><td>3</td><td>1</td></tr>
+              <tr><td>JailbreakDiffBench</td><td>2,000+</td><td>No</td><td>11</td><td>1</td></tr>
+              <tr><td>T2I-RiskyPrompt</td><td>6,432</td><td>No</td><td>6</td><td>1</td></tr>
+              <tr><td><strong>GuardChat</strong></td><td><strong>10,000</strong></td><td><strong>Yes</strong></td><td><strong>6</strong></td><td><strong>2</strong></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section is-soft">
+      <div class="container is-max-desktop">
+        <div class="task-grid">
+          <div class="info-card">
+            <p class="section-kicker">Limitations</p>
+            <h2 class="title is-4">Known Scope Boundaries</h2>
+            <div class="content">
+              <p>GuardChat relies on LLMs for synthesis and verification, which may introduce stylistic homogeneity and oracle-specific bias.</p>
+              <p>The dataset is English-only, and results may shift as proprietary T2I safety systems are updated.</p>
+              <p>CLIP similarity is useful but may not fully reflect human-perceived semantic fidelity after prompt rewriting.</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <p class="section-kicker">Responsible Release</p>
+            <h2 class="title is-4">Impact and Safeguards</h2>
+            <div class="content">
+              <p>GuardChat is intended to help researchers build defenses that track harmful intent across conversations.</p>
+              <p>The dataset is fully synthesized, contains no real user data or PII, and is released under a strict research-only license to reduce dual-use risk.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container is-max-desktop">
+        <p class="section-kicker">Paper</p>
+        <h2 class="title is-3">Manuscript</h2>
+        <iframe class="pdf-frame" src="static/pdfs/paper.pdf" title="GuardChat paper PDF"></iframe>
+      </div>
+    </section>
+
+    <section class="section is-soft" id="BibTeX">
+      <div class="container is-max-desktop content">
+        <div class="bibtex-header">
+          <h2 class="title">BibTeX</h2>
+          <button class="copy-bibtex-btn button is-small" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+            <i class="fas fa-copy"></i>
+            <span class="copy-text ml-2">Copy</span>
+          </button>
+        </div>
+        <pre id="bibtex-code"><code>@inproceedings{tran2026guardchat,
+  title     = {GuardChat: Benchmarking Multi-Turn Jailbreak Attacks in T2I Systems},
+  author    = {Tran, Ngoc-Dai and Huynh, Thanh-Tuong and Le, Trung-Nghia},
+  booktitle = {Submitted to the 40th Conference on Neural Information Processing Systems (NeurIPS)},
+  year      = {2026},
+  url       = {https://anonymous.4open.science/w/GuardChat/}
+}</code></pre>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
     <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content has-text-centered">
+            <p>
+              This page was built from the Academic Project Page Template, adopted from the Nerfies project page.
+              Website source is licensed under Creative Commons Attribution-ShareAlike 4.0 International.
+            </p>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <!-- TODO: Replace with your poster PDF -->
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
-
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <div class="bibtex-header">
-        <h2 class="title">BibTeX</h2>
-        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
-          <i class="fas fa-copy"></i>
-          <span class="copy-text">Copy</span>
-        </button>
-      </div>
-      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
-  title={GuardChat: Benchmarking Multi-Turn Jailbreak Attacks in T2I Systems},
-  author={Ngoc-Dai Tran and Thanh-Tuong Huynh and Trung-Nghia Le},
-  journal={Conference/Journal Name},
-  year={2024},
-  url={https://your-domain.com/your-project-page}
-}</code></pre>
-    </div>
-</section>
-<!--End BibTex citation -->
-
-
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+  </footer>
+</body>
+</html>
